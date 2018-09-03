@@ -113,7 +113,7 @@ function cache(options) {
                 return undefined;
             }
 
-            return JSON.parse(entry.data);
+            return entry.data ? JSON.parse(entry.data) : undefined;
         }
 
         try {
